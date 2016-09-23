@@ -1,7 +1,10 @@
 # thesis for Masters Degree in Telecom
-# Topic  Open Source Telecom Stack and SLEE implementation in Java
+# "Open Source Telecom Stack and SLEE implementation in Java"
 
 # Three virtual machines are to be configured
 
-# telecom communications service provider by using Dialogic DSI stack to simulate HLR and MSC
+# telecom network side machine :
+# CentOS6.2 
+# Dialogic DSI stack to provide M3UA based SS7 link
+# mtr files for HLR and MSC
 
