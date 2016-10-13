@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<connectdelay value="5000"/>
+<servers/>
+<associations>
+	<name value="Assoc1"/>
+	<association name="Assoc1" assoctype="CLIENT" hostAddress="192.168.70.1" hostPort="2905" peerAddress="192.168.70.2" peerPort="2905" serverName="" ipChannelType="0" extraHostAddresseSize="0"/>
+</associations>
