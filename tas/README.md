@@ -15,11 +15,5 @@ export PATH=$JBOSS_HOME:PATH
 
 extract mobicents-gmlc   (tar xvzf mobicents-gmlc-1.0.0-SNAPSHOT.tar.gz)
 
-install into TAS  (mvn install)
-
-Copy xml configuration files for JSS7
-
-cp mobicents-gmlc-1.0.0-SNAPSHOT/core/bootstrap/config/data/*.xml $JBOSS_HOME/server/default/data
-
 start jboss  (run.sh -b 0.0.0.0)
 
