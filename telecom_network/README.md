@@ -1,7 +1,7 @@
 # telecom communications service provider setup
 # using Dialogic DSI Protocol Stack
 
-Virtual Machine running CentOS 6.2
+Virtual Machine running CentOS 5.6 or above
 
 create "NAT" and "inet" network interface on eth0 and eth1
 
@@ -21,8 +21,13 @@ install lksctp-tools  (yum install lksctp-tools)
 
 copy system.txt, config.txt, mtr_hlr and mtr_msc into /opt/dsi
 
-update permissions for executable
-
 run  (./gctload -d )
 
+====================================
+
+built hlr application from telecom-csp folder using "make -fmtr.mak"
+
+and drop into /opt/dsi folder
+
+./mtr_hlr -m0x2d -u0x15
 
