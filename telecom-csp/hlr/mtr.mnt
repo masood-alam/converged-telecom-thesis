@@ -1,0 +1,30 @@
+#
+#                       Copyright (C) Dialogic Corporation 2000-2007.  All Rights Reserved.
+#
+#   File:               mtr.mnt
+#
+#   Makefile to build:	mtr
+#   Output file:        mtr (executable for Windows NT)
+#
+#   -------+---------+------+------------------------------------------
+#   Issue     Date      By    Description
+#   -------+---------+------+------------------------------------------
+#     1     16-Feb-00   MH    - Initial makefile.
+#     2     27-Feb-07   ML    - Change copyright.
+
+# Include common definitions:
+!INCLUDE ../makdefs.mnt
+
+TARGET = mtr_hlr.exe
+
+all:    $(TARGET)
+
+clean:
+        del /q *.obj
+        del /q $(TARGET)
+
+OBJS = mtr.obj mtr_main.obj
+
+$(TARGET): $(OBJS)
+    $(LINKER) -out:$(TARGET) $(OBJS) $(LIBS)
+
